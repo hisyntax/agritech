@@ -22,7 +22,7 @@ info:
     email: support@swagger.io
     name: API Support
     url: http://www.swagger.io/support
-  description: This is the API serving the afritech frontend
+  description: This is the API serving the agritech frontend
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html

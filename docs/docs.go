@@ -129,7 +129,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "/api/v1",
 	Schemes:          []string{"https"},
 	Title:            "agritech API",
-	Description:      "This is the API serving the afritech frontend",
+	Description:      "This is the API serving the agritech frontend",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }

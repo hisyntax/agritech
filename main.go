@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
+	_ "github.com/hisyntax/agritech/docs"
 	"github.com/hisyntax/agritech/user"
-
 	"github.com/hisyntax/monnify-go"
 	"github.com/joho/godotenv"
 
@@ -17,7 +17,7 @@ import (
 
 // @title           agritech API
 // @version         1.0
-// @description     This is the API serving the afritech frontend
+// @description     This is the API serving the agritech frontend
 // @termsOfService  http://swagger.io/terms/
 
 // @contact.name   API Support
