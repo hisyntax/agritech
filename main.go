@@ -15,7 +15,7 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
-// @title           afritech API
+// @title           agritech API
 // @version         1.0
 // @description     This is the API serving the afritech frontend
 // @termsOfService  http://swagger.io/terms/
@@ -27,7 +27,7 @@ import (
 // @license.name  Apache 2.0
 // @license.url   http://www.apache.org/licenses/LICENSE-2.0.html
 
-// @host                       afritech.herokuapp.com
+// @host                       agritech0.herokuapp.com
 // @BasePath                   /api/v1
 // @schemes                    https
 // @query.collection.format    multi

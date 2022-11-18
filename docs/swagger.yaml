@@ -11,18 +11,12 @@ definitions:
     properties:
       email:
         type: string
-      first_name:
-        type: string
-      last_name:
+      full_name:
         type: string
       password:
         type: string
-      phone_number:
-        type: string
-      sex:
-        type: string
     type: object
-host: afritech.herokuapp.com
+host: agritech0.herokuapp.com
 info:
   contact:
     email: support@swagger.io
@@ -33,7 +27,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   termsOfService: http://swagger.io/terms/
-  title: afritech API
+  title: agritech API
   version: "1.0"
 paths:
   /user/signin:

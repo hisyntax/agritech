@@ -14,12 +14,9 @@ import (
 )
 
 type SwaggerUserSignup struct {
-	First_Name   string `json:"first_name"`
-	Last_Name    string `json:"last_name"`
-	Email        string `json:"email"`
-	Phone_Number string `json:"phone_number"`
-	Sex          string `json:"sex"`
-	Password     string `json:"password"`
+	Full_Name string `json:"full_name"`
+	Email     string `json:"email"`
+	Password  string `json:"password"`
 }
 
 // create user 	godoc

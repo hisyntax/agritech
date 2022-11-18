@@ -106,19 +106,10 @@ const docTemplate = `{
                 "email": {
                     "type": "string"
                 },
-                "first_name": {
-                    "type": "string"
-                },
-                "last_name": {
+                "full_name": {
                     "type": "string"
                 },
                 "password": {
-                    "type": "string"
-                },
-                "phone_number": {
-                    "type": "string"
-                },
-                "sex": {
                     "type": "string"
                 }
             }
@@ -134,10 +125,10 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "afritech.herokuapp.com",
+	Host:             "agritech0.herokuapp.com",
 	BasePath:         "/api/v1",
 	Schemes:          []string{"https"},
-	Title:            "afritech API",
+	Title:            "agritech API",
 	Description:      "This is the API serving the afritech frontend",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
