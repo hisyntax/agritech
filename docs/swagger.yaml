@@ -1,0 +1,84 @@
+basePath: /api/v1
+definitions:
+  user.SwaggerUserSignin:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    type: object
+  user.SwaggerUserSignup:
+    properties:
+      email:
+        type: string
+      first_name:
+        type: string
+      last_name:
+        type: string
+      password:
+        type: string
+      phone_number:
+        type: string
+      sex:
+        type: string
+    type: object
+host: afritech.herokuapp.com
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is the API serving the afritech frontend
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: afritech API
+  version: "1.0"
+paths:
+  /user/signin:
+    post:
+      consumes:
+      - application/json
+      description: this endpoint is used signin a user
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/user.SwaggerUserSignin'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: signin user
+      tags:
+      - user
+  /user/signup:
+    post:
+      consumes:
+      - application/json
+      description: this endpoint is used create a user
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/user.SwaggerUserSignup'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: create user
+      tags:
+      - user
+schemes:
+- https
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
