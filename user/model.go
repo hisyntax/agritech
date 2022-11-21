@@ -9,12 +9,13 @@ import (
 )
 
 type User struct {
-	ID         primitive.ObjectID `json:"_id" bson:"_id"`
-	Full_Name  string             `json:"full_name" bson:"full_name" validate:"required"`
-	Email      string             `json:"email" bson:"email" validate:"required"`
-	Password   string             `json:"password" bson:"password" validate:"required"`
-	Created_At time.Time          `json:"created_at" bson:"created_at"`
-	Updated_At time.Time          `json:"updated_at" bson:"updated_at"`
+	ID          primitive.ObjectID `json:"_id" bson:"_id"`
+	Full_Name   string             `json:"full_name" bson:"full_name" validate:"required"`
+	Email       string             `json:"email" bson:"email" validate:"required"`
+	Password    string             `json:"password" bson:"password" validate:"required"`
+	PhoneNumber string             `json:"phone_number"`
+	Created_At  time.Time          `json:"created_at" bson:"created_at"`
+	Updated_At  time.Time          `json:"updated_at" bson:"updated_at"`
 }
 
 type UserSignin struct {

@@ -1,5 +1,19 @@
 basePath: /api/v1
 definitions:
+  user.OtpVal:
+    properties:
+      email:
+        type: string
+      otp:
+        type: integer
+    type: object
+  user.Phone:
+    properties:
+      email:
+        type: string
+      phone_number:
+        type: string
+    type: object
   user.SwaggerUserSignin:
     properties:
       email:
@@ -30,6 +44,46 @@ info:
   title: agritech API
   version: "1.0"
 paths:
+  /user/otp:
+    post:
+      consumes:
+      - application/json
+      description: this endpoint is used to request an otp for a user
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/user.Phone'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: request otp
+      tags:
+      - user
+  /user/otp/validate:
+    post:
+      consumes:
+      - application/json
+      description: this endpoint is used to validate an otp for a user
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/user.OtpVal'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: validate otp
+      tags:
+      - user
   /user/signin:
     post:
       consumes:

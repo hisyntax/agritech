@@ -65,6 +65,8 @@ func main() {
 		{
 			user.POST("/signup", users.Signup)
 			user.POST("/signin", users.Signin)
+			user.POST("/user/otp", users.SendOTP)
+			user.POST("/user/ot/validatep", users.ValidateOtp)
 		}
 	}
 
